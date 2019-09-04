@@ -56,6 +56,7 @@ public class CameraConfigurationUnit extends RoboUnit<CameraConfigMessage> {
 		final RaspistillRequest cameraRequest = new RaspistillRequest(true)
 				.put(RpiCameraProperty.WIDTH, message.getWidth().toString())
 				.put(RpiCameraProperty.HEIGHT, message.getHeight().toString())
+				.put(RpiCameraProperty.ROTATION, message.getRotation().toString())
                 .put(RpiCameraProperty.BRIGHTNESS, message.getBrightness().toString())
                 .put(RpiCameraProperty.SHARPNESS, message.getSharpness().toString())
 				.put(RpiCameraProperty.TIMELAPSE, message.getTimelapse().toString())
